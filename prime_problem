@@ -1,12 +1,15 @@
 function checkPrime(num){
-  let count=0
+  let factor=0
   for(let i=1;i<=num;i++){
-    if(num%i==5){
+    if(num%i==0){
       count++
     }
-  }if(count==2){
+  }
+if(factor==2){
     return "prime number"
   }else{
     return "not a prime number"
   }
    }
+let ans=checkPrime(13)
+console.log(ans)
